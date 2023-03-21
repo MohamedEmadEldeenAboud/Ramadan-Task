@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D3371"
+    tools:context=".MainActivity"
+    app:layoutDescription="@xml/activity_main_scene">
+
+
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/fawanees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/fawanes"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/muslimGuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/habits"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/muslimFamily"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        app:lottie_rawRes="@raw/people"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <ImageView android:id="@+id/newTxt"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/txt2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="1dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="640dp" />
+
+
+    <ImageView android:id="@+id/ramadanKareem"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/ramadan"
+        android:elevation="1dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="640dp" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
